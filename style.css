@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(8,auto);
+    width: 45vw;
+    max-width: 70vw;
+    min-width: 30vw;
+    border:7px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background-color: #fff;
+    aspect-ratio: 1/1;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    resize: horizontal;
+    overflow: auto;
+
+}
+.lightSquare, .darkSquare {
+    max-width: 500px;
+    max-height: 500px;
+    box-sizing:border-box;
+    position: relative;
+    
+}
+.lightSquare {
+    background-color: rgb(253, 228, 200);
+}
+
+.darkSquare {
+    background-color: rgb(145, 145, 145);
+}
+.numberCoord {
+    margin: 1px 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.letterCoord {
+    margin: 1px 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.piece {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.selected {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+.movable {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+.check {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+.winningMessage {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo, .header {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px;
+}
+.logoImage {
+    width: 30px;
+}
+.dots {
+    width: 5vw;
+}
+.topLeft {
+    position: absolute;
+    top:5;
+    left:5;
+}
+.queeningChoice {
+    width: 15%;
+}
+.queeningChoice:hover {
+    background-color: rgba(146, 146, 146, 0.5);
+    cursor: pointer;
+}
