@@ -127,4 +127,10 @@
         height: 5px;
         opacity: 0;
     }
+    .numberCoord {
+        font-size: 13px;
+    }
+    .letterCoord {
+        font-size: 13px;
+    }
 }
