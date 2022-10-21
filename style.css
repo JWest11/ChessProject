@@ -14,8 +14,8 @@
     margin: auto;
     box-sizing: border-box;
     position: relative;
-    resize: horizontal;
-    overflow: auto;
+    /* resize: horizontal; */
+    /* overflow: auto; */
 
 }
 .lightSquare, .darkSquare {
@@ -87,8 +87,11 @@
 .logoImage {
     width: 30px;
 }
+
+
 .dots {
     width: 5vw;
+    min-width: 80px;
 }
 .topLeft {
     position: absolute;
@@ -101,4 +104,27 @@
 .queeningChoice:hover {
     background-color: rgba(146, 146, 146, 0.5);
     cursor: pointer;
+}
+@media screen and (max-width: 1500px) {
+    #board {
+        max-width: none;
+        width: 55vw;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #board {
+        max-width: none;
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 860px) {
+    #board {
+        max-width: none;
+        width: 95vw;
+    }
+    .dots {
+        min-width: none;
+        height: 5px;
+        opacity: 0;
+    }
 }
